@@ -1,8 +1,8 @@
-/* CSCI 261 Lab 1B: Intro to ACSI art
+/* CSCI 261 Lab 1C
  *
  * Author: Allan Huntington
  *
- * More complete description here...
+ * Calculate the volulme of a prisim, by asking for side lengths then calculating.
  */
 
 // The include section adds extra definitions from the C++ standard library.
@@ -12,12 +12,10 @@
 // We will (most of the time) use the standard library namespace in our programs.
 using namespace std;
 
-// Define any constants or global variables below this comment.
 
-// Must have a function named "main", which is the starting point of a C++ program.
 int main() {
 
-int var =10;
+int var =10; // intitalize all of the varibles
 int base;
 int width;
 int height;
@@ -25,13 +23,13 @@ int volume;
 double radius;
 double area;
 double const PI = 3.1415;
-cout << " please enter the with, base and height of your prism (in inches)" << endl;
+cout << " please enter the with, base and height of your prism (in inches)" << endl; // ask the user to the sides of their prisim
     cin >> width;
     cin >> base;
     cin >>  height;
-volume=base*width*height;
+volume=base*width*height; //calculate the volume
 
-cout << "the volume of your prism is: " <<volume  <<" cubic inches"<< endl;
+cout << "the volume of your prism is: " <<volume  <<" cubic inches"<< endl; // output the volume
 
 cout << "please enter the radius of your circle (in inches)" << endl;
 cin >> radius;

@@ -1,8 +1,7 @@
 /* CSCI 261 Lab 1B: Intro to ACSI art
  *
  * Author: Allan Huntington
- *
- * More complete description here...
+ * Using cout statements we are able to print picutres using asking symbols.
  */
 
 // The include section adds extra definitions from the C++ standard library.
@@ -11,14 +10,14 @@
 // We will (most of the time) use the standard library namespace in our programs.
 using namespace std;
 
-// Define any constants or global variables below this comment.
+
 
 // Must have a function named "main", which is the starting point of a C++ program.
 int main() {
 
 
 
-    cout << "   *\n"
+    cout << "   *\n" // output the lines with the symbols to create the picture
             "  ***\n"
             " *****\n"
             "*******\n"
