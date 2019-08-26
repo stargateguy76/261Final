@@ -17,28 +17,38 @@ using namespace std;
 // Must have a function named "main", which is the starting point of a C++ program.
 int main() {
 
-int var =10;
-int base;
-int width;
-int height;
-int volume;
-double radius;
-double area;
-double const PI = 3.1415;
-cout << " please enter the with, base and height of your prism (in inches)" << endl;
-    cin >> width;
-    cin >> base;
-    cin >>  height;
-volume=base*width*height;
+    double speed = 63.5;
+    int age = 19;
+    double gpa =3.5;
 
-cout << "the volume of your prism is: " <<volume  <<" cubic inches"<< endl;
 
-cout << "please enter the radius of your circle (in inches)" << endl;
-cin >> radius;
-area = PI*pow(radius,2);
+cout << "                  __ooooooooo__\n"
+        "              oOOOOOOOOOOOOOOOOOOOOOo\n"
+        "          oOOOOOOOOOOOOOOOOOOOOOOOOOOOOOo\n"
+        "       oOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOo\n"
+        "     oOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOo\n"
+        "   oOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOo\n"
+        "  oOOOOOOOOOOO*  *OOOOOOOOOOOOOO*  *OOOOOOOOOOOOo\n"
+        " oOOOOOOOOOOO      OOOOOOOOOOOO      OOOOOOOOOOOOo\n"
+        " oOOOOOOOOOOOOo  oOOOOOOOOOOOOOOo  oOOOOOOOOOOOOOo\n"
+        "oOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOo\n"
+        "oOOOO     OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO     OOOOo\n"
+        "oOOOOOO OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO OOOOOOo\n"
+        " *OOOOO  OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO  OOOOO*\n"
+        " *OOOOOO  *OOOOOOOOOOOOOOOOOOOOOOOOOOOOO*  OOOOOO*\n"
+        "  *OOOOOO  *OOOOOOOOOOOOOOOOOOOOOOOOOOO*  OOOOOO*\n"
+        "   *OOOOOOo  *OOOOOOOOOOOOOOOOOOOOOOO*  oOOOOOO*\n"
+        "     *OOOOOOOo  *OOOOOOOOOOOOOOOOO*  oOOOOOOO*\n"
+        "       *OOOOOOOOo  *OOOOOOOOOOO*  oOOOOOOOO*      \n"
+        "          *OOOOOOOOo           oOOOOOOOO*      \n"
+        "              *OOOOOOOOOOOOOOOOOOOOO*          \n"
+        "                   \"\"ooooooooo\"\"" << endl;
 
-cout << "the area of a circle with the radius " << radius <<" is: " << area << "square inches" <<endl;
-
+cout <<"Hello world!"<<endl;
+cout <<"I am: "<< age << " years old" << endl;
+cout <<"The fastsest ive gone on a bike is : " << speed << " mph" <<endl;
+cout <<"My gpa is: " << gpa <<endl;
+cout <<"Goodbye!"<<endl;
 
 
     return 0; // signals the operating system that our program ended OK.
