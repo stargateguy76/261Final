@@ -6,9 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/Users/allanhuntington/CLionProjects/Set1/main.cpp
+C:/Users/ahall/CLionProjects/261Final/main.cpp
 iostream
 -
 cmath
+-
+stdlib.h
+-
+time.h
 -
 
