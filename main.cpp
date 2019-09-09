@@ -42,7 +42,7 @@ int main() {
 
     }
 
-    side3=rand() %(sum-int(side2)+1)+int(side2);
+    side3=rand() %(sum-int(side2))+int(side2);
     perimeter=side1+side2+side3;
     S=perimeter/2;
     area=sqrt(S*((S-side1)*(S-side2)*(S-side3)));

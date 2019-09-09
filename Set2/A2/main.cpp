@@ -42,7 +42,7 @@ int main() {
 
     }
 
-    side3=rand() %(sum-int(side2)+1)+int(side2); // find the randomly generated third side
+    side3=rand() %(sum-int(side2))+int(side2); // find the randomly generated third side
     perimeter=side1+side2+side3; // find the perimeter and area of the triangle using herons formula
     S=perimeter/2;
     area=sqrt(S*((S-side1)*(S-side2)*(S-side3)));
