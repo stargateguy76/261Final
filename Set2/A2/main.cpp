@@ -1,7 +1,7 @@
-/* CSCI 261 Assignment 2a
+/* CSCI 261 Lab 2C
  *
  * Author: Allan Huntington
- *  THis is a program that asks the user for 2 sides of a triangle, then finds the third side and displays the kind of triangle
+ * THis is a basic rock paper scissors program that askes for user input and randomly generates a computer output, and then shows the answer as a string, and then shows the winner of the game
  *
  */
 
@@ -17,7 +17,7 @@
 using namespace std;
 
 int main() {
-    double side1=0; // intialise all of the varibles we will use in the program and keep them as doubles for various size triangles
+    double side1=0;
     double side2=0;
     double side3=0;
     double valTemp=0;
@@ -26,15 +26,15 @@ int main() {
     double area=0;
     double perimeter;
     double S;
-    srand(time(0)); // intialize the random timer
+    srand(time(0));
     rand();
     string Kind="N/a";
-    cout << "Please enter your two sides" <<endl; // as the user for the first 2 sides of the triangle
+    cout << "Please enter your two sides" <<endl;
     cin >>side1 >> side2;
 
-    sum=side1+side2; // find the integer sum of the two sides
+    sum=side1+side2;
 
-    if (side1>side2) // if side 1 is bigger then side two, reorder the numbers so a side 1 is the smallest and side 3 is the largest
+    if (side1>side2)
     {
         valTemp=side1;
         side1=side2;
@@ -42,28 +42,30 @@ int main() {
 
     }
 
-    side3=rand() %(sum-int(side2))+int(side2); // find the randomly generated third side using the side two as the basis
-    perimeter=side1+side2+side3; // find the perimeter and area of the triangle using herons formula
+
+    side3=rand() %(sum-int(side2))+int(side2);
+
+    perimeter=side1+side2+side3;
     S=perimeter/2;
     area=sqrt(S*((S-side1)*(S-side2)*(S-side3)));
 
 
 
 
-        if (fabs(pow(side1,2) + pow(side2,2) - pow(side3,2)) <=tol) // compare the values to determine the kind of triangle
-        {
-            Kind="Right";
-        }
-        else if(pow(side1,2)+pow(side2,2)>pow(side3,2))
-        {
+    if (fabs(pow(side1,2) + pow(side2,2) - pow(side3,2)) <=tol)
+    {
+        Kind="Right";
+    }
+    else if(pow(side1,2)+pow(side2,2)>pow(side3,2))
+    {
         Kind="Acute";
-        }
-        else{
+    }
+    else{
         Kind = "Obtuse";
-        }
-    cout <<"you have a triangle with sides:"<< side1 <<" " << side2<<" " <<side3 <<endl; //print all of the calculated information.
+    }
+    cout <<"you have a triangle with sides:"<< side1 <<" " << side2<<" " <<side3 <<endl;
     cout << "You have a " << Kind << " triangle"<<endl;
     cout << "the area of the triangle is: " << area <<endl;
     cout<< "the perimeter of the triangle is : " <<perimeter <<endl;
-        return 0; // signals the operating system that our program ended OK.
+    return 0; // signals the operating system that our program ended OK.
 }
