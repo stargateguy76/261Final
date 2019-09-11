@@ -13,59 +13,29 @@
 #include <cstdlib>
 #include <time.h>
 #include <ctime>
+#include <fstream>
 // We will (most of the time) use the standard library namespace in our programs.
 using namespace std;
 
-int main() {
-    double side1=0;
-    double side2=0;
-    double side3=0;
-    double valTemp=0.0;
-    double tol=0.001;
-    int sum;
-    double area=0;
-    double perimeter;
-    double S;
-    srand(time(0));
-    rand();
-    string Kind="N/a";
-    cout << "Please enter your two sides" <<endl;
-    cin >>side1 >> side2;
-
-    sum=side1+side2;
-
-    if (side1>side2)
-    {
-        valTemp=side1;
-        side1=side2;
-        side2=valTemp;
-
-    }
-
-
-    side3=rand() %(sum-int(side2))+int(side2);
-
-    perimeter=side1+side2+side3;
-    S=perimeter/2;
-    area=sqrt(S*((S-side1)*(S-side2)*(S-side3)));
-
-
-
-
-    if (fabs(pow(side1,2) + pow(side2,2) - pow(side3,2)) <=tol)
-    {
-        Kind="Right";
-    }
-else if(pow(side1,2)+pow(side2,2)>pow(side3,2))
+int main()
 {
-    Kind="Acute";
-}
-else{
-    Kind = "Obtuse";
-}
-cout <<"you have a triangle with sides:"<< side1 <<" " << side2<<" " <<side3 <<endl;
-cout << "You have a " << Kind << " triangle"<<endl;
-cout << "the area of the triangle is: " << area <<endl;
-cout<< "the perimeter of the triangle is : " <<perimeter <<endl;
-    return 0; // signals the operating system that our program ended OK.
-}
+    ofstream mathwks("mathWorksheet");
+
+    double u;
+    double v;
+    double a,b,c,d;
+    srand( unsigned(time(NULL)));
+
+        u=(double)rand()/(RAND_MAX + 1)+0+(rand()%200)-100;
+        v=(double)rand()/(RAND_MAX + 1)+0+(rand()%200)-100;
+        a=u+v;
+        b=u-v;
+        c=u/v;
+        d=u*v;
+
+        mathwks >> a;
+
+
+        mathwks.close();
+    return 0;
+}// signals the operating system that our program ended OK.
