@@ -20,7 +20,7 @@ int main() {
     double side1=0;
     double side2=0;
     double side3=0;
-    double valTemp=0;
+    double valTemp=0.0;
     double tol=0.001;
     int sum;
     double area=0;
