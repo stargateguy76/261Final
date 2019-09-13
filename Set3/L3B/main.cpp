@@ -8,7 +8,10 @@
 // The include section adds extra definitions from the C++ standard library.
 
 #include <iostream>
-
+#include <cmath>// For cin, cout, etc.
+#include <stdlib.h>
+#include <cstdlib>
+#include <time.h>
 #include <string>
 #include <fstream>
 // We will (most of the time) use the standard library namespace in our programs.
@@ -18,42 +21,21 @@ int main()
 {
     double u;
     double v;
-    int i;
-    double ans;
     string equalSign;
-    string mathSign;
+    string plusSign;
     string questionMark;
 
     ifstream mathwks("mathWorksheet");
+    mathwks>> u;
+    mathwks>> plusSign;
+    mathwks>> v;
 
 
+    cout << u<<" + "<< v << " = "<< u+v<< endl;
+    cout << u<<" - "<< v << " = "<< u-v<< endl;
+    cout << u<<" / "<< v << " = "<< u/v<< endl;
+    cout << u<<" * "<< v << " = "<< u*v<< endl;
 
-    for( int i=1;i<=4;i++)
-    {
-        mathwks>> u;
-        mathwks>> mathSign;
-        mathwks>> v;
-        mathwks>> equalSign;
-        mathwks>> questionMark;
-        if(i==1)
-        {
-            ans=u+v;
-        }
-        else if(i==2)
-        {
-            ans=u-v;
-        }
-        else if(i==3)
-        {
-            ans=u/v;
-        }
-        else if(i==4)
-        {
-            ans=u*v;
-        }
-
-        cout << u<< " "<<mathSign << " "<< v << " "<< equalSign << " " << ans<< endl;
-    }
 
 
         mathwks.close();

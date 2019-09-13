@@ -9,14 +9,8 @@
 /Users/allanhuntington/CLionProjects/261Final/main.cpp
 iostream
 -
-cmath
+string
 -
-stdlib.h
--
-cstdlib
--
-time.h
--
-ctime
+fstream
 -
 
