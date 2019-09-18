@@ -9,8 +9,14 @@
 /Users/allanhuntington/CLionProjects/261Final/main.cpp
 iostream
 -
+ios
+-
 string
 -
 fstream
+-
+iomanip
+-
+cmath
 -
 
