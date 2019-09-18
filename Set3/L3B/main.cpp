@@ -1,8 +1,7 @@
-/* CSCI 261 Lab 2C
+/* CSCI 261 Lab 3b
  *
  * Author: Allan Huntington
- * THis is a basic rock paper scissors program that askes for user input and randomly generates a computer output, and then shows the answer as a string, and then shows the winner of the game
- *
+ *  This program reads the mathworksheet file and then prints its results to the user
  */
 
 // The include section adds extra definitions from the C++ standard library.
@@ -25,19 +24,19 @@ int main()
     string plusSign;
     string questionMark;
 
-    ifstream mathwks("mathWorksheet");
+    ifstream mathwks("mathWorksheet"); // open and read the file
     mathwks>> u;
     mathwks>> plusSign;
     mathwks>> v;
 
 
-    cout << u<<" + "<< v << " = "<< u+v<< endl;
+    cout << u<<" + "<< v << " = "<< u+v<< endl; // print the file results
     cout << u<<" - "<< v << " = "<< u-v<< endl;
     cout << u<<" / "<< v << " = "<< u/v<< endl;
     cout << u<<" * "<< v << " = "<< u*v<< endl;
 
 
 
-        mathwks.close();
+        mathwks.close(); // close the file
     return 0;
 }// signals the operating system that our program ended OK.
