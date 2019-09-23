@@ -9,6 +9,14 @@
 /Users/allanhuntington/CLionProjects/261Final/main.cpp
 iostream
 -
+cmath
+-
+stdlib.h
+-
+time.h
+-
+iostream
+-
 ios
 -
 string
