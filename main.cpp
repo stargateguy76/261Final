@@ -1,7 +1,8 @@
 /* CSCI 261 Lab 2D
  *
  * Author: Allan Huntington
- * THis is a basic rock paper scissors program that askes for user input and randomly generates a computer output, and then shows the answer as a string, and then shows the winner of the game
+ * this program reads and prints the numbers in a file, following different ways to know when to stop reading the numbers
+ * then calculating the average
  *
  */
 
@@ -12,81 +13,115 @@
 #include <stdlib.h>
 #include <time.h>
 
-// We will (most of the time) use the standard library namespace in our programs
-// CSCI 261 PL4: For Printer
 
-// The include section adds extra definitions from the C++ standard library.
-#include <iostream>
-#include <ios>
+
+
 #include <string>
 #include <fstream>
 #include <iomanip>
-#include <cmath>// For cin, cout, etc.
+#include <cmath> // For cin, cout, etc.
 
 // We will (most of the time) use the standard library namespace in our programs.
 using namespace std;
-int main()
-{
- int num1=1; // initalize the number varibles
- int num2=1;
- int n=1;
- int count1[11] ={}; // make 2 arrays that can be the max length that the number can be
- int count2[11] ={};
- int product;
- bool run= true;
-cin>>num1;
-cin>>num2;
-while (num1<2 || num2 <2|| num1>10||num2>10) // if the number is valid, input it.
-{
 
-    cin>>num1;
-    cin>>num2;
-    run=false;
+ bool isInteger(const std::string & s)
+{
+    if(s.empty() || ((!isdigit(s[0])) && (s[0] != '-') && (s[0] != '+'))) return false;
+
+    char * p;
+    strtol(s.c_str(), &p, 10);
+
+    return (*p == 0);
 }
 
-run=true;
-if(run==true)
-{
+
+int main() {
+    int userIn;
+    char guess[3];
+    int low;
+    int high;
+    int realNum;
+    bool run= true;
+    srand(time(0));
 
 
-for(int a=0; a<=num1;a++) // fill the first array with values from 1 to num 1
-{
-    count1[a]=a;
-}
-for(int b=0; b<=num2;b++) // fill the first array with values from 1 to num2
-{
-    count2[b]=b;
-}
+    cout << "Enter the lowest number: ";
+    cin >> low;
+    cout << endl;
 
-cout<<setfill('.') << setw(2) << ""; // print the blank space for the first number (0) which is not shown
+    cout << "Enter the highest number: ";
+    cin >> high;
+    cout << endl;
+    while (high - low < 100) {
 
-for(int i=1;i<=num1;i++) // iterate from 1 to the length of num1 to print the top line
-{
-    cout<<setfill('.')<<setw(4)<<right<<count1[i]; // print the numbers in the array
-}
+    cout << "High number must be at least 100 more than the low number." << endl;
 
-cout<< endl;  // print a new line
-cout<<setfill('.')<<setw(2)<<right<<count2[n]; // print the first number of the next collum.
-
-for(int i=1; i<=num1+1;i++) // loop for the length of num1
-{
-    if(i==num1+1 && n<num2) { // if we get to the end of num 1, start a new line
-        i=1;
-        n++;
-        cout<<endl;
-        cout<<setfill('.')<<setw(2)<<right<<count2[n]; //print the num 2 to be multipled out for the next rows
-    }
-
-    product=count1[i]*count2[n]; // limit the extra 0 printed at the end
-    if(product >0)
-    {
-        cout <<setfill('.')<<setw(4)<<right<<product;
-    }
+        cout << "Enter the highest number: ";
+        cin >> high;
+        cout << endl;
 
 }
-cout<<endl; // end the final line.
+    realNum=rand()%(high-low) +low;
 
 
-}
+ while (run==true)
+ {
+
+     cout << "Pick a number Between " <<low <<" and " << high<<": ";
+     cin>>guess;
+
+     if(isInteger(guess))
+     {
+         userIn=stoi(guess);
+     } else{
+
+         userIn=0;
+     }
+
+     cout <<endl;
+
+     if(userIn == realNum)
+     {
+         run=false;
+     }
+
+     if(abs(userIn-realNum) <5 && userIn<realNum)
+     {
+         cout<<"Too low! Oooh you're close!"<<endl;
+     }
+     else if (userIn==0)
+     {
+         cout<<"please pick a number"<<endl;
+     }
+
+     else if(abs(userIn-realNum)>25 && userIn <realNum)
+     {
+         cout<<"Too low! Not even close!"<<endl;
+     }
+     else if(userIn <realNum)
+     {
+         cout<<"Too low"<<endl;
+     }
+
+     else if(abs(userIn-realNum) <5&& userIn>realNum)
+     {
+         cout<<"Too high! Oooh you're close!"<<endl;
+     }
+     else if(abs(userIn-realNum)>25&& userIn>realNum)
+     {
+         cout<<"Too high! Not even close!"<<endl;
+     }
+     else if( userIn >realNum)
+     {
+         cout<<"To high"<<endl;
+     }
+
+
+
+
+
+
+ }
+ cout<<"Congratulations the number was: "<<realNum <<endl;
     return 0; // signals the operating system that our program ended OK.
 }

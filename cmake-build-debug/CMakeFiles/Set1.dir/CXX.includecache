@@ -15,10 +15,6 @@ stdlib.h
 -
 time.h
 -
-iostream
--
-ios
--
 string
 -
 fstream
