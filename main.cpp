@@ -24,23 +24,19 @@
 // We will (most of the time) use the standard library namespace in our programs.
 using namespace std;
 
- bool isInteger(const std::string & s)
-{
-    if(s.empty() || ((!isdigit(s[0])) && (s[0] != '-') && (s[0] != '+'))) return false;
-
-    char * p;
-    strtol(s.c_str(), &p, 10);
-
-    return (*p == 0);
-}
 
 
 int main() {
     int userIn;
-    char guess[3];
+    char guess[5];
     int low;
     int high;
     int realNum;
+    const int TOO_CLOSE=5;
+    const int TOO_FAR=25;
+    const int MIN_RANGE=100;
+
+
     bool run= true;
     srand(time(0));
 
@@ -52,7 +48,7 @@ int main() {
     cout << "Enter the highest number: ";
     cin >> high;
     cout << endl;
-    while (high - low < 100) {
+    while (high - low < MIN_RANGE) {
 
     cout << "High number must be at least 100 more than the low number." << endl;
 
@@ -64,37 +60,41 @@ int main() {
     realNum=rand()%(high-low) +low;
 
 
- while (run==true)
- {
 
-     cout << "Pick a number Between " <<low <<" and " << high<<": ";
-     cin>>guess;
 
-     if(isInteger(guess))
-     {
-         userIn=stoi(guess);
-     } else{
+ while (run==true) {
 
-         userIn=0;
+     cout << "Pick a number Between " << low << " and " << high << ": ";
+     cin >> guess;
+
+     for (int i = 0; i < 2; i++) {
+         if (isdigit(guess[i])) {
+             userIn = stoi(guess);
+         } else {
+             userIn = 0;
+
+         }
      }
 
-     cout <<endl;
+     cout << endl;
 
-     if(userIn == realNum)
-     {
-         run=false;
+     if (userIn == realNum) {
+         run = false;
      }
 
-     if(abs(userIn-realNum) <5 && userIn<realNum)
-     {
-         cout<<"Too low! Oooh you're close!"<<endl;
+     if (abs(userIn - realNum) < TOO_CLOSE && userIn < realNum) {
+         cout << "Too low! Oooh you're close!" << endl;
      }
      else if (userIn==0)
      {
-         cout<<"please pick a number"<<endl;
+         cout<<"Please pick a number"<<endl;
+     }
+     else if(userIn>high || userIn <low)
+     {
+         cout << "Please select a number in the range" << endl;
      }
 
-     else if(abs(userIn-realNum)>25 && userIn <realNum)
+     else if(abs(userIn-realNum)>TOO_FAR && userIn <realNum)
      {
          cout<<"Too low! Not even close!"<<endl;
      }
@@ -103,11 +103,11 @@ int main() {
          cout<<"Too low"<<endl;
      }
 
-     else if(abs(userIn-realNum) <5&& userIn>realNum)
+     else if(abs(userIn-realNum) <TOO_CLOSE && userIn>realNum)
      {
          cout<<"Too high! Oooh you're close!"<<endl;
      }
-     else if(abs(userIn-realNum)>25&& userIn>realNum)
+     else if(abs(userIn-realNum)>TOO_FAR && userIn>realNum)
      {
          cout<<"Too high! Not even close!"<<endl;
      }
