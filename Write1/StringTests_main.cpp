@@ -100,31 +100,32 @@ char charAt(const string STR, const int IDX) {
 
 // Returns a concatenation of strings left and right
 string stringAppend(const string LEFT, const string RIGHT)  {
-    string result = LEFT+RIGHT;
-
+    string result = LEFT;
+    // TODO 02: set result to the concatenation of strings LEFT and RIGHT
     // variables available: const string LEFT, const string RIGHT
     return result;
 }
 
 // Returns the result of inserting a string into another at a given position
 string stringInsert(const string STR, const string TO_INSERT, const int IDX) {
-    string result = STR.substr(0, IDX) + TO_INSERT + STR.substr(IDX);
-
+    string result = STR;
+    // TODO 03: set result to the result of inserting a string into another
     // variables available: const string STR, const string TO_INSERT, const int IDX
     return result;
 }
 
 // Returns the first index of character c in string s
 int stringFind(const string STR, const char C)  {
-    int result = STR.find_first_of(C);
-
+    int result = -1;
+    // TODO 04: set result to the index of the first occurrence of the character
     // variables available: const string STR, const char C
     return result;
 }
 
 // Returns part of a string
 string stringSubstring(const string STR, const int IDX, const int LEN) {
-    string result = STR.substr(IDX,LEN);
+    string result = STR;
+    // TODO 05: set result to be a substring starting at index of given length
     // variables available: const string STR, const int IDX, const int LEN
     return result;
 }

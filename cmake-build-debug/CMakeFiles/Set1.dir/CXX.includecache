@@ -7,20 +7,10 @@
 #IncludeRegexTransform: 
 
 /Users/allanhuntington/CLionProjects/261Final/main.cpp
-iostream
--
-cmath
--
-stdlib.h
--
-time.h
--
-string
--
-fstream
--
 iomanip
 -
-cmath
+iostream
+-
+string
 -
 
