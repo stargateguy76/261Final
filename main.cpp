@@ -130,8 +130,8 @@ string stringSubstring(const string STR, const int IDX, const int LEN) {
 }
 
 // Replaces part of a string
-string stringReplace(const string STR, const string TEXT_TO_REPLACE, const string REPLACE_WITH) {
-    string result = STR;
+string stringReplace(string STR, const string TEXT_TO_REPLACE, const string REPLACE_WITH) {
+    string result =STR.replace(STR.find(TEXT_TO_REPLACE), TEXT_TO_REPLACE.length(), REPLACE_WITH);
     // TODO 06: set result to be the string with the given text replaced
     // variables available: const string STR, const string TEXT_TO_REPLACE, const string REPLACE_WITH
     return result;

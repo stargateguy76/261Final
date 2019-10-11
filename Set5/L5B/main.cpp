@@ -28,6 +28,7 @@ int main (){
     const int N=4;
     const int M=4;
      int array[N][M];
+     int transpose[N][M];
     int rowNum=0;
     int rowNum2=0;
     for(int i=0;i< N;i++)
@@ -53,6 +54,7 @@ int main (){
         cout<<"]"<<endl;
     }
     cout<<"the transpose of the array is"<<endl;
+
     for(int i=0;i< N;i++)
     {
         cout<<"[ ";
@@ -60,7 +62,8 @@ int main (){
         rowNum2=i;
         for(int i=0;i<M;i++)
         {
-            cout<<array[i][rowNum2]<<" ";
+            transpose[rowNum2][i]=array[i][rowNum2]<<" ";
+            cout<< transpose[rowNum2][i];
         }
         cout<<"]"<<endl;
     }
