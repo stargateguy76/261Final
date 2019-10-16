@@ -198,6 +198,15 @@ string nthWord( string STR, const int N)  {
 string substitute(string STR, const string TARGET, const string REPLACEMENT)  {
 
     string result =STR;
+    for (int i =0;i<STR.length()-(TARGET.length()-1);i++)
+    {
+        if(STR.substr(i,TARGET.length())==TARGET)
+        {
+            result.replace(i,TARGET.length(),REPLACEMENT);
+        }
+
+    }
+
     // TODO 12: set result to be the string with all instances of TARGET replaced
     // variables available: const string STR, const string TARGET, const string REPLACEMENT
     return result;
