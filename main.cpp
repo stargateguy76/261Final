@@ -139,30 +139,42 @@ string stringReplace(string STR, const string TEXT_TO_REPLACE, const string REPL
 
 // Returns the first word, given a sentence
 string firstWord(const string STR)  {
-    string result = STR;
+    string result =STR.substr(0,STR.find_first_of(' '));
     // TODO 07: set result to the first word from the string
     // variables available: const string STR
     return result;
 }
 
 // Returns the string with the first word removed
-string removeFirstWord(const string STR)  {
-    string result = STR;
+string removeFirstWord( string STR)  {
+    if(STR.length()>8)
+    {
+        STR =STR.substr(STR.find_first_of(' ')+1,STR.length());
+    }
+    else
+    {
+       STR="";
+    }
+    string result=STR;
     // TODO 08: set result to be the string with the first word removed
     // variables available: const string STR
     return result;
 }
 
 // Returns the second word, given a sentence
-string secondWord(const string STR)  {
-    string result = STR;
+string secondWord( string STR)  {
+    STR =STR.substr(STR.find_first_of(' ')+1,STR.length());
+    string result =STR.substr(0,STR.find_first_of(' '));
     // TODO 09: set result to be the second word from the string
     // variables available: const string STR
     return result;
 }
 
 // Returns the third word, given a sentence
-string thirdWord(const string STR)  {
+string thirdWord( string STR)  {
+    STR =STR.substr(STR.find_first_of(' ')+1,STR.length());
+    STR =STR.substr(STR.find_first_of(' ')+1,STR.length());
+    STR =STR.substr(0,STR.find_first_of(' '));
     string result = STR;
     // TODO 10: set result to be the third word from the string
     // variables available: const string STR
@@ -170,7 +182,12 @@ string thirdWord(const string STR)  {
 }
 
 // Returns the nth word, given a sentence
-string nthWord(const string STR, const int N)  {
+string nthWord( string STR, const int N)  {
+    for(int i=1;i<N;i++)
+    {
+        STR =STR.substr(STR.find_first_of(' ')+1,STR.length());
+    }
+    STR =STR.substr(0,STR.find_first_of(' '));
     string result = STR;
     // TODO 11: set result to be the nth word from the string
     // variables available: const string STR, const int N
@@ -178,8 +195,9 @@ string nthWord(const string STR, const int N)  {
 }
 
 // Returns a string substituting character target with string replacement
-string substitute(const string STR, const string TARGET, const string REPLACEMENT)  {
-    string result = STR;
+string substitute(string STR, const string TARGET, const string REPLACEMENT)  {
+
+    string result =STR;
     // TODO 12: set result to be the string with all instances of TARGET replaced
     // variables available: const string STR, const string TARGET, const string REPLACEMENT
     return result;
