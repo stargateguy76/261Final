@@ -29,17 +29,17 @@ int main() {
     int userNum[15];
     cout << "Hey! Witness my first array mojo!\n"
             "Enter 15 numbers and I will tell you what they are." << endl;
-    for (int i = 1; i <= 15; i++) {
+    for (int i = 1; i <= 15; i++) { // for all 15 nums, as the user for their input
         cout << "Number " << i << ":";
         cin >> userNum[i-1];
         cout << endl;
     }
     cout << "So awesome!" << endl;
 
-    cout << "The numbers are: ";
+    cout << "The numbers are: "; // print the numbers back to the user
     for (int i = 1; i <= 15; i++)
     {
-        cout << userNum[i-1];
+        cout << userNum[i-1]; // number 1 is array index 0
         cout<<" ";
     }
     cout<< endl;

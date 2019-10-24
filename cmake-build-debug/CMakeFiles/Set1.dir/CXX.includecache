@@ -7,10 +7,12 @@
 #IncludeRegexTransform: 
 
 /Users/allanhuntington/CLionProjects/261Final/main.cpp
-iomanip
--
 iostream
 -
+vector
+-
 string
+-
+fstream
 -
 

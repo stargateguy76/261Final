@@ -44,15 +44,15 @@ int main() {
     //ask the user for the file name and checks for errors
     cout << "What file(s) do you wish to open?" << endl;
     cin >> fileName;
-
-
+   
+    
     ifstream picture(fileName);
-
+    
     if(picture.fail()){
         cerr << "Error opening input file";
         return -1;
     }
-
+    
     picture >> temp;
     picture >> numColumn;
     picture >> numRow;
@@ -65,12 +65,12 @@ int main() {
     for(i = 0; i < numRow; i++){
         vector<Pixel> temp(numColumn);
         for(j = 0; j < numColumn; j++){
-            picture >> redNum;
-            temp.at(j).red = redNum;
-            picture >> greenNum;
-            temp.at(j).green = greenNum;
-            picture >> blueNum;
-            temp.at(j).blue = blueNum;
+        picture >> redNum;
+        temp.at(j).red = redNum;
+        picture >> greenNum;
+        temp.at(j).green = greenNum;
+        picture >> blueNum;
+        temp.at(j).blue = blueNum;
         }
         image.at(i) = temp;
     }
@@ -87,7 +87,7 @@ int main() {
     }
 
     //declares the grayscale vector and makes the values follwing the assigment template
-    vector< vector< Pixel > > grayImage(numRow);
+   vector< vector< Pixel > > grayImage(numRow);
     for(i = 0; i < numRow; i++){
         vector<Pixel> temp(numColumn);
         for(j = 0; j < numColumn; j++){
@@ -96,7 +96,7 @@ int main() {
             temp.at(j).green = grayVal;
             temp.at(j).blue = grayVal;
         }
-        grayImage.at(i) = temp;
+       grayImage.at(i) = temp;
     }
 
     //outputs the . PPM file
