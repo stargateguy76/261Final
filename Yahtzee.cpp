@@ -13,10 +13,9 @@ using namespace std;
 int rollDie(){
     int roll;
 
-    roll=(rand()%599);
-    roll=(roll/100)+1;
+    roll=((rand()%5)+1);
     return roll;
-};
+}
 
 int rollDice(int x[])
 {
@@ -27,22 +26,27 @@ int rollDice(int x[])
     }
 }
 
-int printHand(int x[])
+int printHand(int z[])
 {
     cout<<"Your Hand is: ";
 
-    for(int i=0;i<4;i++)
+    for(int i=0;i<5;i++)
     {
-        cout<<x[i]<<" " ;
+        if(z[i]<7) {
+
+            cout << z[i] << " ";
+        }
     }
+    cout<<endl;
 }
-int saveNums(int x, char y)
+int saveNums(char y)
 {
+    int num;
     if(y=='N')
     {
-        x=rollDie();
+        num=rollDie();
     }
-    return x;
+    return num;
 }
 
 

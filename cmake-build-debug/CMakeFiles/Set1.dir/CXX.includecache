@@ -6,21 +6,23 @@
 
 #IncludeRegexTransform: 
 
-/Users/allanhuntington/CLionProjects/261Final/Yahtzee.h
-string
--
-
-/Users/allanhuntington/CLionProjects/261Final/main.cpp
+/Users/allanhuntington/CLionProjects/261Final/Yahtzee.cpp
 iostream
--
-time.h
--
-vector
--
-string
--
-fstream
 -
 Yahtzee.h
 /Users/allanhuntington/CLionProjects/261Final/Yahtzee.h
+time.h
+-
+stdlib.h
+-
+stdio.h
+-
+vector
+-
+array
+-
+
+/Users/allanhuntington/CLionProjects/261Final/Yahtzee.h
+string
+-
 

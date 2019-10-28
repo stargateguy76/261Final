@@ -8,7 +8,7 @@
 int rollDie();
 int printHand(int x[]);
 int rollDice(int x[]);
-int saveNums(int x, char y);
+int saveNums(char y);
 int add (int x, int y);
 int scoreOnes( int die1, int die2, int die3, int die4, int die5 );
 int scoreTwos(int die1, int die2, int die3, int die4, int die5);

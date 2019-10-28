@@ -33,14 +33,15 @@ int main () {
     int roundNum=13;
     char rollAgain='Y';
     char rollDieAgain='N';
+    int hand[HAND_SIZE];
     for (int i =0;i<roundNum;i++) {
 
 
-        int hand[HAND_SIZE];
+
         rollDice(hand);
         while (rollAgain == 'Y' && count > 0) {
 
-            cout << printHand(hand) << endl;
+            printHand(hand);
             cout << count << " Rolls remaining" << endl;
             cout << "Do you want to roll again? (Y or N)";
             cin >> rollAgain;
@@ -50,8 +51,16 @@ int main () {
                 for (int i = 0; i < HAND_SIZE; i++) {
                     cout << "Do you want to keep die #" << i + 1 << "? (Y or N) ";
                     cin >> rollDieAgain;
-                    hand[i] = saveNums(hand[i], rollDieAgain);
+                    if(rollDieAgain=='N')
+                    {
+                        hand[i] = rollDie();
+                    }
+
                 }
+            }
+            else
+            {
+
             }
         }
         rollAgain='Y';
