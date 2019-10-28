@@ -6,8 +6,14 @@
 
 #IncludeRegexTransform: 
 
+/Users/allanhuntington/CLionProjects/261Final/Yahtzee.h
+string
+-
+
 /Users/allanhuntington/CLionProjects/261Final/main.cpp
 iostream
+-
+time.h
 -
 vector
 -
@@ -15,4 +21,6 @@ string
 -
 fstream
 -
+Yahtzee.h
+/Users/allanhuntington/CLionProjects/261Final/Yahtzee.h
 

@@ -123,6 +123,33 @@ Set1/fast:
 	$(MAKE) -f CMakeFiles/Set1.dir/build.make CMakeFiles/Set1.dir/build
 .PHONY : Set1/fast
 
+Yahtzee.o: Yahtzee.cpp.o
+
+.PHONY : Yahtzee.o
+
+# target to build an object file
+Yahtzee.cpp.o:
+	$(MAKE) -f CMakeFiles/Set1.dir/build.make CMakeFiles/Set1.dir/Yahtzee.cpp.o
+.PHONY : Yahtzee.cpp.o
+
+Yahtzee.i: Yahtzee.cpp.i
+
+.PHONY : Yahtzee.i
+
+# target to preprocess a source file
+Yahtzee.cpp.i:
+	$(MAKE) -f CMakeFiles/Set1.dir/build.make CMakeFiles/Set1.dir/Yahtzee.cpp.i
+.PHONY : Yahtzee.cpp.i
+
+Yahtzee.s: Yahtzee.cpp.s
+
+.PHONY : Yahtzee.s
+
+# target to generate assembly for a file
+Yahtzee.cpp.s:
+	$(MAKE) -f CMakeFiles/Set1.dir/build.make CMakeFiles/Set1.dir/Yahtzee.cpp.s
+.PHONY : Yahtzee.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -159,6 +186,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Set1"
+	@echo "... Yahtzee.o"
+	@echo "... Yahtzee.i"
+	@echo "... Yahtzee.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
