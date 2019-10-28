@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/Users/allanhuntington/CLionProjects/261Final/Dice.cpp" "/Users/allanhuntington/CLionProjects/261Final/cmake-build-debug/CMakeFiles/Set1.dir/Dice.cpp.o"
   "/Users/allanhuntington/CLionProjects/261Final/Yahtzee.cpp" "/Users/allanhuntington/CLionProjects/261Final/cmake-build-debug/CMakeFiles/Set1.dir/Yahtzee.cpp.o"
   "/Users/allanhuntington/CLionProjects/261Final/main.cpp" "/Users/allanhuntington/CLionProjects/261Final/cmake-build-debug/CMakeFiles/Set1.dir/main.cpp.o"
   )

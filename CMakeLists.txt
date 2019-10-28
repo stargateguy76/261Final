@@ -3,4 +3,4 @@ project(Set1)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Set1 main.cpp Yahtzee.cpp Yahtzee.h)
+add_executable(Set1 main.cpp Yahtzee.cpp Yahtzee.h Dice.cpp Dice.h)

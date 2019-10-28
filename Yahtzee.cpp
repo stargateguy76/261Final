@@ -1,53 +1,12 @@
 //
 // Created by Allan Huntington on 2019-10-27.
 //
-#include <iostream>
+
 #include "Yahtzee.h"
-#include <time.h>
-#include <stdlib.h>
-#include <stdio.h>
+
 #include <vector>
 
-#include <array>
 using namespace std;
-int rollDie(){
-    int roll;
-
-    roll=((rand()%5)+1);
-    return roll;
-}
-
-int rollDice(int x[])
-{
-
-    for (int i = 0; i < 5; i++)
-    {
-        x[i] = rollDie();
-    }
-}
-
-int printHand(int z[])
-{
-    cout<<"Your Hand is: ";
-
-    for(int i=0;i<5;i++)
-    {
-        if(z[i]<7) {
-
-            cout << z[i] << " ";
-        }
-    }
-    cout<<endl;
-}
-int saveNums(char y)
-{
-    int num;
-    if(y=='N')
-    {
-        num=rollDie();
-    }
-    return num;
-}
 
 
 int scoreOnes( int die1, int die2, int die3, int die4, int die5 ) {

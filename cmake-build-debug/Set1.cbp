@@ -78,6 +78,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/allanhuntington/CLionProjects/261Final/Dice.cpp">
+			<Option target="Set1"/>
+		</Unit>
+		<Unit filename="/Users/allanhuntington/CLionProjects/261Final/Dice.h">
+			<Option target="Set1"/>
+		</Unit>
 		<Unit filename="/Users/allanhuntington/CLionProjects/261Final/Yahtzee.cpp">
 			<Option target="Set1"/>
 		</Unit>

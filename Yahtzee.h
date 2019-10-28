@@ -5,11 +5,8 @@
 #ifndef SET1_YAHTZEE_H
 #define SET1_YAHTZEE_H
 
-int rollDie();
-int printHand(int x[]);
-int rollDice(int x[]);
-int saveNums(char y);
-int add (int x, int y);
+
+
 int scoreOnes( int die1, int die2, int die3, int die4, int die5 );
 int scoreTwos(int die1, int die2, int die3, int die4, int die5);
 int scoreThrees( int die1, int die2, int die3, int die4, int die5 );

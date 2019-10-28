@@ -17,6 +17,7 @@
 using namespace std;
 
 #include "Yahtzee.h"
+#include "Dice.h"
 
 
 int main () {
