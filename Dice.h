@@ -5,6 +5,6 @@
 #ifndef SET1_DICE_H
 #define SET1_DICE_H
 int rollDie();
-int printHand(int x[]);
+void printHand(int x[]);
 int rollDice(int x[]);
 #endif //SET1_DICE_H

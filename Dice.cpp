@@ -27,8 +27,9 @@ int rollDice(int x[])
     }
 }
 
-int printHand(int z[])
-{
+void printHand(int z[]);
+
+void printHand(int *z) {
     cout<<"Your Hand is: ";
 
     for(int i=0;i<5;i++)
