@@ -6,12 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/Users/allanhuntington/CLionProjects/261Final/Dice.h
-
-/Users/allanhuntington/CLionProjects/261Final/Yahtzee.h
-string
--
-
 /Users/allanhuntington/CLionProjects/261Final/main.cpp
 iostream
 -
@@ -23,8 +17,6 @@ string
 -
 fstream
 -
-Yahtzee.h
-/Users/allanhuntington/CLionProjects/261Final/Yahtzee.h
-Dice.h
-/Users/allanhuntington/CLionProjects/261Final/Dice.h
+cmath
+-
 

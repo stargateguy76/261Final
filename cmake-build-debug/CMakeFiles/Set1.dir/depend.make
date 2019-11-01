@@ -8,7 +8,5 @@ CMakeFiles/Set1.dir/Dice.cpp.o: ../Yahtzee.h
 CMakeFiles/Set1.dir/Yahtzee.cpp.o: ../Yahtzee.cpp
 CMakeFiles/Set1.dir/Yahtzee.cpp.o: ../Yahtzee.h
 
-CMakeFiles/Set1.dir/main.cpp.o: ../Dice.h
-CMakeFiles/Set1.dir/main.cpp.o: ../Yahtzee.h
 CMakeFiles/Set1.dir/main.cpp.o: ../main.cpp
 
