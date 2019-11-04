@@ -1,4 +1,4 @@
-/* CSCI 261 Lab 2C
+/* CSCI 261 Lab 2D
  *
  * Author: Allan Huntington
  * THis is a basic rock paper scissors program that askes for user input and randomly generates a computer output, and then shows the answer as a string, and then shows the winner of the game
@@ -25,11 +25,11 @@ string userChoice[3]={"Rock","paper","Sciscors"};
 int computerNumber;
 srand(time(0));
 
-cout << "Welcome one and all to a round of Rock, Paper, Scissors! (Enter P, R or S)" << endl;
+cout << "Welcome one and all to a round of Rock, Paper, Scissors! (Enter P, R or S)" << endl; // ask the user for their choice of rock paper or scissors
 cin >> input;
 input=toupper(input);
 
-if (input == 'R')
+if (input == 'R') // if the user chooses rock, paper or scissors, print thier choice and set the win integer to is respective value
 {
     cout <<"Player choose: Rock" <<endl;
     win =0;
@@ -48,10 +48,10 @@ if (input == 'P')
 
 }
 
-    computerNumber=rand()%3;
-    cout <<"Computer choose: " << compChoice[computerNumber]  << endl;
+    computerNumber=rand()%3; // randomly generate a choice for the computer as a number 0,1,2
+    cout <<"Computer choose: " << compChoice[computerNumber]  << endl; // call that number as an index value for a string array carrying rock paper or scissors
 
-if (computerNumber==win)
+if (computerNumber==win) // run comparisons between the computer choice and the user choice to determine who wins.
 {
     cout <<"its a tie!" <<endl;
 }

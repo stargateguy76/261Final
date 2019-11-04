@@ -1,9 +1,9 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Set1.dir/main.cpp.obj"
+  "CMakeFiles/Set1.dir/main.cpp.o"
+  "CMakeFiles/Set1.dir/Yahtzee.cpp.o"
+  "CMakeFiles/Set1.dir/Dice.cpp.o"
   "Set1.pdb"
-  "Set1.exe"
-  "Set1.exe.manifest"
-  "libSet1.dll.a"
+  "Set1"
 )
 
 # Per-language clean rules from dependency scanning.

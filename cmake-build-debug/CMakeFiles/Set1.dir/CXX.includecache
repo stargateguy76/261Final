@@ -6,13 +6,17 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/ahall/CLionProjects/261Final/main.cpp
+/Users/allanhuntington/CLionProjects/261Final/main.cpp
 iostream
 -
-cmath
--
-stdlib.h
--
 time.h
+-
+vector
+-
+string
+-
+fstream
+-
+cmath
 -
 

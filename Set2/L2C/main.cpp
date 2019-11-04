@@ -23,11 +23,11 @@ string compChoice[3]={"Rock","paper","Sciscors"};
 int computerNumber;
 srand(time(0));
 
-cout << "Welcome one and all to a round of Rock, Paper, Scissors! (Enter P, R or S)" << endl;
+cout << "Welcome one and all to a round of Rock, Paper, Scissors! (Enter P, R or S)" << endl; // input a user choice for rock paper and scissors
 cin >> input;
 input=toupper(input);
 
-if (input == 'R')
+if (input == 'R') // based off of the input, display them to the user as a string.
 {
     cout <<"Player choose: Rock" <<endl;
 }

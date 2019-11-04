@@ -21,12 +21,12 @@ char input;
 int computerNumber;
 srand(time(0));
 
-cout << "Welcome one and all to a round of Rock, Paper, Scissors! (Enter P, R or S)" <<p endl;
+cout << "Welcome one and all to a round of Rock, Paper, Scissors! (Enter P, R or S)" <<p endl; // as the user for thier input
 cin >> input;
 
-computerNumber=rand()%3;
+computerNumber=rand()%3; // randomly generate a computer choice
 cout <<"Player choose: " << input <<endl;
-cout <<"Copmuter choose: " << computerNumber << endl;
+cout <<"Copmuter choose: " << computerNumber << endl; // display both choices
 
 
     return 0; // signals the operating system that our program ended OK.
