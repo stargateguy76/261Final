@@ -1,7 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Set1.dir/main.cpp.obj"
-  "CMakeFiles/Set1.dir/Yahtzee.cpp.obj"
-  "CMakeFiles/Set1.dir/Dice.cpp.obj"
   "Set1.pdb"
   "Set1.exe"
   "Set1.exe.manifest"

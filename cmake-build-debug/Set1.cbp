@@ -80,18 +80,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/ahall/CLionProjects/261Final/Dice.cpp">
-			<Option target="Set1"/>
-		</Unit>
-		<Unit filename="C:/Users/ahall/CLionProjects/261Final/Dice.h">
-			<Option target="Set1"/>
-		</Unit>
-		<Unit filename="C:/Users/ahall/CLionProjects/261Final/Yahtzee.cpp">
-			<Option target="Set1"/>
-		</Unit>
-		<Unit filename="C:/Users/ahall/CLionProjects/261Final/Yahtzee.h">
-			<Option target="Set1"/>
-		</Unit>
 		<Unit filename="C:/Users/ahall/CLionProjects/261Final/main.cpp">
 			<Option target="Set1"/>
 		</Unit>

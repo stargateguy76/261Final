@@ -122,60 +122,6 @@ Set1/fast:
 	$(MAKE) -f CMakeFiles\Set1.dir\build.make CMakeFiles/Set1.dir/build
 .PHONY : Set1/fast
 
-Dice.obj: Dice.cpp.obj
-
-.PHONY : Dice.obj
-
-# target to build an object file
-Dice.cpp.obj:
-	$(MAKE) -f CMakeFiles\Set1.dir\build.make CMakeFiles/Set1.dir/Dice.cpp.obj
-.PHONY : Dice.cpp.obj
-
-Dice.i: Dice.cpp.i
-
-.PHONY : Dice.i
-
-# target to preprocess a source file
-Dice.cpp.i:
-	$(MAKE) -f CMakeFiles\Set1.dir\build.make CMakeFiles/Set1.dir/Dice.cpp.i
-.PHONY : Dice.cpp.i
-
-Dice.s: Dice.cpp.s
-
-.PHONY : Dice.s
-
-# target to generate assembly for a file
-Dice.cpp.s:
-	$(MAKE) -f CMakeFiles\Set1.dir\build.make CMakeFiles/Set1.dir/Dice.cpp.s
-.PHONY : Dice.cpp.s
-
-Yahtzee.obj: Yahtzee.cpp.obj
-
-.PHONY : Yahtzee.obj
-
-# target to build an object file
-Yahtzee.cpp.obj:
-	$(MAKE) -f CMakeFiles\Set1.dir\build.make CMakeFiles/Set1.dir/Yahtzee.cpp.obj
-.PHONY : Yahtzee.cpp.obj
-
-Yahtzee.i: Yahtzee.cpp.i
-
-.PHONY : Yahtzee.i
-
-# target to preprocess a source file
-Yahtzee.cpp.i:
-	$(MAKE) -f CMakeFiles\Set1.dir\build.make CMakeFiles/Set1.dir/Yahtzee.cpp.i
-.PHONY : Yahtzee.cpp.i
-
-Yahtzee.s: Yahtzee.cpp.s
-
-.PHONY : Yahtzee.s
-
-# target to generate assembly for a file
-Yahtzee.cpp.s:
-	$(MAKE) -f CMakeFiles\Set1.dir\build.make CMakeFiles/Set1.dir/Yahtzee.cpp.s
-.PHONY : Yahtzee.cpp.s
-
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -212,12 +158,6 @@ help:
 	@echo ... Set1
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... Dice.obj
-	@echo ... Dice.i
-	@echo ... Dice.s
-	@echo ... Yahtzee.obj
-	@echo ... Yahtzee.i
-	@echo ... Yahtzee.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
