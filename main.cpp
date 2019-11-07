@@ -42,6 +42,7 @@ void godzilla::setPL(int powerLevel) {
 
 }
 void godzilla::setName(string name1)  {
+
     name=name1;
 }
 void godzilla::print() {
