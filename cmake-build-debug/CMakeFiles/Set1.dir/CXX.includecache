@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/ahall/CLionProjects/261Final/main.cpp
+/Users/allanhuntington/CLionProjects/261Final/main.cpp
 fstream
 -
 iostream
@@ -18,7 +18,7 @@ memory
 string
 -
 ctime
-C:/Users/ahall/CLionProjects/261Final/ctime
+/Users/allanhuntington/CLionProjects/261Final/ctime
 vector
 -
 

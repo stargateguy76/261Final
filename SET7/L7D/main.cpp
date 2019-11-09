@@ -1,7 +1,3 @@
-
-// Allan Huntington 11/8/19
-
-
 #include <fstream>
 #include <iostream>
 #include <memory>
