@@ -6,7 +6,6 @@
 #include <unordered_set>
 #include <vector>
 using namespace std;
-// Map word lengths to points
 map<int, int> POINTS {{3, 1}, {5, 2}, {6, 3}, {7, 5}, {8, 11}};
 
 /******************************************************************************/
