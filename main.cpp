@@ -222,13 +222,33 @@ void Boggle::Words(int position, string string, vector<bool> &visited) {
 
     visited[position] = false;
 }
+string gen_random(char *s, const int len) {
+    static const char alphanum[] =
+
+            "abcdefghijklmopqrstuvwxyz";
+
+    for (int i = 0; i < len; ++i) {
+        s[i] = alphanum[rand() % (sizeof(alphanum) - 1)];
+    }
+    string boardString="";
+
+    int i;
+    for (i = 0; i < len; i++) {
+        boardString = boardString + s[i];
+    }
+
+    s[len] = 0;
+    return(boardString);
+}
 
 /******************************************************************************/
 
 int main() {
+    srand(0);
     auto dict = make_shared<const Dictionary>("twl06.txt");
+    char boardLetters[16];
     Boggle b(dict);
-    b.Load("abdgthrnsjrke");
+    b.Load(gen_random(boardLetters,16));
     b.Print();
     b.Score();
 }
